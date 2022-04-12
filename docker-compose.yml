@@ -4,7 +4,8 @@ services:
     image: 'banking:latest'
     container_name: banking
     #restart: always
-    build: ../banking
+    #build: ../banking
+    build: ./banking
     depends_on:
       postgres:
         condition: service_healthy
@@ -17,7 +18,8 @@ services:
     image: 'account:latest'
     container_name: account
     #restart: always
-    build: ../account
+    #build: ../account
+    build: ./account
     depends_on:
       postgres:
         condition: service_healthy
