@@ -25,7 +25,16 @@ services:
     ports:
       - "8085:8085"
 
+  kredit:
+    image: 'kredit:latest'
+    container_name : kredit
+    build: ../kredit
+    depends_on:
+      postgres:
+        condition: service_healthy
 
+    ports:
+      - "8090:8090"
 
 
 
