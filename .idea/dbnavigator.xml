@@ -30,7 +30,9 @@
     <connection id="0ce30fb7-114a-48a5-a07c-b41e340b7b85">
       <console name="postgres-banking" type="STANDARD" schema="public" session="Main"><![CDATA[select * from customers
 
-select * from accounts]]></console>
+select * from accounts
+
+select * from kredits]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
