@@ -1,10 +1,10 @@
 version: '2.1'
 services:
-  banking:
-    image: 'banking:latest'
-    container_name: banking
+  customer:
+    image: 'customer:latest'
+    container_name: customer
     #restart: always
-    build: ../banking
+    build: ../customer
     depends_on:
       postgres:
         condition: service_healthy
@@ -25,10 +25,10 @@ services:
     ports:
       - "8085:8085"
 
-  kredit:
-    image: 'kredit:latest'
-    container_name : kredit
-    build: ../kredit
+  credit:
+    image: 'credit:latest'
+    container_name : credit
+    build: ../credit
     depends_on:
       postgres:
         condition: service_healthy
