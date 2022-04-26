@@ -32,7 +32,7 @@
 
 select * from accounts
 
-select * from kredits]]></console>
+select * from credits]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
