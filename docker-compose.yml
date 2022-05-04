@@ -4,7 +4,7 @@ services:
     image: 'hm716/customer:latest'
     container_name: customer
     #restart: always
-    build: ../customer
+#    build: ../customer
     depends_on:
       postgres:
         condition: service_healthy
@@ -17,7 +17,7 @@ services:
     image: 'hm716/account:latest'
     container_name: account
     #restart: always
-    build: ../account
+#    build: ../account
     depends_on:
       postgres:
         condition: service_healthy
@@ -28,7 +28,7 @@ services:
   credit:
     image: 'hm716/credit:latest'
     container_name : credit
-    build: ../credit
+#    build: ../credit
     depends_on:
       postgres:
         condition: service_healthy
