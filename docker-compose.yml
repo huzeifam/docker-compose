@@ -1,7 +1,7 @@
 version: '2.1'
 services:
   customer:
-    image: 'customer:latest'
+    image: 'hm716/customer:latest'
     container_name: customer
     #restart: always
     build: ../customer
@@ -14,7 +14,7 @@ services:
 
 
   account:
-    image: 'account:latest'
+    image: 'hm716/account:latest'
     container_name: account
     #restart: always
     build: ../account
@@ -26,7 +26,7 @@ services:
       - "8085:8085"
 
   credit:
-    image: 'credit:latest'
+    image: 'hm716/credit:latest'
     container_name : credit
     build: ../credit
     depends_on:
