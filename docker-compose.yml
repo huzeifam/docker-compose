@@ -1,7 +1,8 @@
 version: '2.1'
 services:
   customer:
-    image: 'hm716/customer:latest'
+#    image: 'bankingaccountconsumer.azurecr.io/customer'
+    image: 'hm716/customer'
     container_name: customer
     #restart: always
 #    build: ../customer
@@ -14,7 +15,8 @@ services:
 
 
   account:
-    image: 'hm716/account:latest'
+#    image: 'bankingaccountconsumer.azurecr.io/account'
+    image: 'hm716/account'
     container_name: account
     #restart: always
 #    build: ../account
@@ -26,7 +28,8 @@ services:
       - "8085:8085"
 
   credit:
-    image: 'hm716/credit:latest'
+#    image: 'bankingaccountconsumer.azurecr.io/credit'
+    image: 'hm716/credit'
     container_name : credit
 #    build: ../credit
     depends_on:
